@@ -1,0 +1,595 @@
+@font-face {
+  font-family: playfair;
+  src: url("playfair.ttf");
+}
+@font-face {
+  font-family: mainFont;
+  src: url("mainFont.ttf");
+}
+
+@font-face {
+  font-family: DancingScript;
+  src: url("DancingScript.ttf");
+}
+
+body {
+  background-color: white;
+  font-family: playfair;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* targets the name in header(#company) */
+header div:last-of-type {
+  padding-left: 15%;
+  width: 700px;
+  text-align: center;
+  width: 60%;
+  font-family: playfair;
+  text-shadow: -5px 3px rgba(31, 28, 28, 0.377);
+}
+
+.container div {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 40px;
+  vertical-align: middle;
+  letter-spacing: 5px;
+}
+
+header {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 64%;
+  height: auto;
+}
+
+#logo {
+  margin: 20px 0 20px 20px;
+  border: 2px solid black;
+  border-radius: 10px 30px;
+  padding: 10px;
+}
+
+.navigation {
+  height: 50px;
+  padding-left: 25%;
+  background-color: black;
+  border-radius: 14px;
+}
+
+ul li {
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  float: left;
+  padding: 5px 40px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li:hover {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#about {
+  width: 250px;
+  margin: 20px 38%;
+  text-transform: uppercase;
+}
+
+#intro > img {
+  margin: 120px 20px 40px 20px;
+  float: left;
+  border: 4px solid black;
+}
+
+.us {
+  width: 49%;
+  font-family: mainFont;
+  line-height: 1.4;
+  display: inline-block;
+  font-size: 32px;
+  padding-top: 100px;
+  margin: 25px 10px;
+}
+
+#signature {
+  font-family: DancingScript;
+  font-size: 58px;
+  text-align: center;
+}
+
+article {
+  width: max-content;
+  box-sizing: border-box;
+}
+
+#me {
+  width: 700px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+section #me::first-letter {
+  font-size: 40px;
+}
+
+.experties {
+  width: 1000px;
+  margin: 0px auto 0px auto;
+  font-size: xx-large;
+}
+
+.experties div {
+  display: inline-block;
+  margin: 14px auto;
+  line-height: 2.4;
+}
+
+.labels label {
+  display: block;
+  color: black;
+}
+
+progress {
+  display: block;
+  margin-bottom: 2px;
+  width: 800px;
+  height: 10px;
+}
+
+progress:hover {
+  width: 850px;
+}
+
+h2 ~ label {
+  font-size: medium;
+}
+
+.feed {
+  color: lightslategray;
+  width: 1000px;
+  margin: 10px auto 20px auto;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+.feed1,
+.feed2 {
+  box-sizing: border-box;
+  margin: 1px 40px;
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  padding: 10px 20px 10px 38px;
+}
+
+.recommended {
+  font-weight: bold;
+  font-size: larger;
+  font-family: DancingScript;
+  display: inline-block;
+}
+
+.feed div:last-of-type {
+  margin-left: 35%;
+}
+
+.feed div:nth-child(4) {
+  margin-left: 17%;
+}
+
+#feed {
+  color: black;
+  font-size: 45px;
+  width: 350px;
+  margin: 80px 0 0px 0;
+}
+
+aside {
+  margin: 0 5px;
+  width: 100px;
+  float: right;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(0, 0%, 0%);
+  margin-top: 40px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer > div {
+  margin: 10px 9%;
+  padding-left: 1%;
+}
+
+footer > div > img {
+  border-radius: 10px 30px;
+}
+
+#social a {
+  position: relative;
+  top: 10px;
+  left: 90%;
+  padding-bottom: 10px;
+  display: block;
+  color: white;
+  box-sizing: border-box;
+}
+
+article:last-of-type section::before {
+  content: "“";
+  font-size: 20px;
+}
+
+article:last-of-type section::after {
+  content: "”";
+  font-size: 20px;
+}
+
+/* main page css code */
+
+#projects {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(188, 143, 143, 0.8)
+  );
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 80%;
+  height: 420px;
+}
+
+#projects > img {
+  box-sizing: border-box;
+  width: 40%;
+  margin: 50px 5%;
+}
+
+#prohead {
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+#projects img:hover:not(#secondImg) {
+  border: 40px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(-10deg);
+  box-shadow: -10px 10px rgba(188, 143, 143, 0.795);
+}
+
+#projects img:hover:not(#firstImg) {
+  border: 40px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(10deg);
+  box-shadow: 10px 10px rgba(188, 143, 143, 0.795);
+}
+
+#schedule {
+  margin: 10px auto;
+  width: 80%;
+  height: 500px;
+}
+
+#schedule h1 {
+  font-size: 34px;
+}
+
+/* css for the table */
+
+table {
+  margin: 0 auto;
+}
+
+table {
+  box-shadow: -5px -5px lightslategray;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px 10px;
+  width: 48%;
+}
+tr:last-child td {
+  text-align: center;
+}
+/* structural psuedo class */
+tr:first-child th {
+  background-color: rgba(167, 152, 152, 0.822);
+}
+
+td[data-priority="1"] {
+  background-color: rgba(255, 0, 0, 0.363);
+}
+td[data-priority="2"] {
+  background-color: rgba(255, 166, 0, 0.384);
+}
+
+td[data-priority="3"] {
+  background-color: rgba(255, 255, 0, 0.342);
+}
+
+td[data-priority="4"] {
+  background-color: rgba(144, 238, 144, 0.336);
+}
+
+td[data-priority="5"] {
+  background-color: rgba(135, 206, 250, 0.342);
+}
+/* assign the num variable */
+body {
+  counter-reset: num;
+}
+/* increment the num variable */
+input:checked {
+  counter-increment: num;
+}
+/* combine it with table   */
+tr:last-child td::after {
+  content: counter(num);
+}
+
+/* partners part in main page */
+#partner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#partner > img {
+  box-sizing: border-box;
+  margin: 0 2.8%;
+  width: 18%;
+  padding-left: 10px;
+}
+
+#parthead {
+  font-size: 45px;
+  padding-left: 11%;
+}
+
+#partner img:nth-child(1):hover {
+  border: 30px solid rgba(128, 128, 128, 0.137);
+}
+
+#partner img:nth-child(2):hover {
+  border: 30px solid rgba(128, 128, 128, 0.137);
+}
+
+#partner img:nth-child(3):hover {
+  border: 30px solid rgba(128, 128, 128, 0.137);
+}
+
+#partner img:nth-child(4):hover {
+  border: 30px solid rgba(128, 128, 128, 0.137);
+}
+
+/* css for the blog page */
+/* flex box for blogs */
+#blogHead {
+  text-align: center;
+  background-image: linear-gradient(#bdc3c7, #2c3e50);
+  border-radius: 10px;
+}
+
+#blog {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#blog > article {
+  width: 30%;
+  margin: 1.5%;
+  padding: 1%;
+}
+
+video {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+#cite {
+  text-align: center;
+}
+
+/* subscription page css */
+
+#news {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"] {
+  width: 98%;
+  padding: 10px 20px;
+  margin: 5px auto;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  float: left;
+  margin-top: 14px;
+}
+
+input[type="email"]:valid {
+  background-color: powderblue;
+  border-color: greenyellow;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  width: 20%;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 40px;
+  margin-left: 20%;
+  font-variant: small-caps;
+}
+
+#animation {
+  display: inline;
+  font-variant: small-caps;
+  position: relative;
+  top: 20px;
+  animation: act 14s infinite;
+}
+
+@keyframes act {
+  0% {
+    left: 0%;
+  }
+  50% {
+    color: red;
+    font-size: x-large;
+  }
+  100% {
+    left: 94%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .us {
+    width: 400px;
+    display: block;
+    padding-top: 20px;
+  }
+  #intro > img {
+    margin-top: 14px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    width: 450px;
+    height: 450px;
+    float: none;
+    display: block;
+  }
+
+  #me {
+    padding: 10px;
+    width: 380px;
+  }
+  #company {
+    margin: 0 30px;
+  }
+
+  .navigation {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding-left: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  ul li {
+    width: 180px;
+    padding: 10px 10px;
+    float: none;
+    color: white;
+    text-decoration: none;
+  }
+
+  header {
+    display: inline-block;
+    align-items: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #logo {
+    margin: 20px 180px;
+  }
+
+  aside {
+    display: none;
+  }
+
+  ul a li:hover {
+    border: 2px solid white;
+  }
+
+  #about {
+    width: 200px;
+    margin: 0px 170px;
+    font-size: x-large;
+    text-decoration: none;
+  }
+
+  progress {
+    width: 450px;
+  }
+
+  footer {
+    height: fit-content;
+  }
+
+  #social a {
+    position: static;
+  }
+
+  #blog > article {
+    width: 98%;
+    margin: 1.5%;
+    padding: 1%;
+  }
+
+  #projects {
+    /* border: black 2px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 90%;
+    height: fit-content;
+  }
+
+  #projects > img {
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+  }
+
+  #partner > img {
+    box-sizing: border-box;
+    margin: 0 4%;
+    width: 40%;
+    height: 80px;
+    padding-left: 10px;
+  }
+
+  button {
+    width: 40%;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 40px;
+    margin-left: 20%;
+  }
+}
